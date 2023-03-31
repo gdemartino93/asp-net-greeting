@@ -1,5 +1,7 @@
 ﻿@model UserGreetingWeb.Models.User
-
+@{
+    ViewData["Title"] = "Registrati";
+}
 <h1>Ecco la registrazione</h1>
 <form method="post" asp-controller="Register" asp-action="Salva">
     <label asp-for="Nome">Nome</label>
