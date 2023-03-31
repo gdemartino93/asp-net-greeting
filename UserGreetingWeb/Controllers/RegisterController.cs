@@ -9,9 +9,14 @@ namespace UserGreetingWeb.Controllers
         {
             return View();
         }
+
+        [HttpPost]
         public ActionResult Salva(User user)
         {
-            //return RedirectToAction()
+            TempData["Nome"] = user.Nome;
+            return RedirectToAction("Index", "Benvenuto");
         }
+
+
     }
 }

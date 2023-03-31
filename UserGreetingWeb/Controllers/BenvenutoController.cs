@@ -4,9 +4,8 @@ namespace UserGreetingWeb.Controllers
 {
     public class BenvenutoController : Controller
     {
-        public IActionResult Benvenuto(string nome)
+        public IActionResult Index()
         {
-            ViewBag.Nome = nome;
             return View();
         }
     }
