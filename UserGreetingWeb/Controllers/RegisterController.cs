@@ -14,6 +14,8 @@ namespace UserGreetingWeb.Controllers
         public ActionResult Salva(User user)
         {
             TempData["Nome"] = user.Nome;
+            TempData["Cognome"] = user.Cognome;
+
             return RedirectToAction("Index", "Benvenuto");
         }
 
